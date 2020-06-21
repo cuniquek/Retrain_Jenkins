@@ -16,6 +16,7 @@ pipeline {
              sh "echo 'Jenkins'>./presentation.txt"
              sh 'git config --global user.email "kostas87_tzes@hotmail.com"'
              sh 'git config --global user.name "cuniquek"'
+             sh 'git remote add origin https://cuniquek:lathossxoli17@github.com/cuniquek/project.git'
              sh "git add ."
              sh 'git commit -m "Jenkins was here!!"'
              sh "git push --set-upstream origin development"
