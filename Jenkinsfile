@@ -14,7 +14,7 @@ pipeline {
             success {
              sh "echo 'Jenkins'>./presentation.txt"
              sh "git add ."
-             sh "git commit -m "Jenkins was here!!""
+             sh "git commit -m 'Jenkins was here!!'"
              sh "git push"
             }
          }
