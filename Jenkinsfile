@@ -13,6 +13,8 @@ pipeline {
             // failed, record the test results and archive the jar file.
             success {
              sh "echo 'Jenkins'>./presentation.txt"
+             sh "git config --global user.email 'kkaps@example.com'"
+             sh "git config --global user.name 'Konstantinos Kapsalis'"
              sh "git add ."
              sh "git commit -m 'Jenkins was here!!'"
              sh "git push"
