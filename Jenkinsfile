@@ -4,7 +4,8 @@ pipeline {
       stage('Build') {
          steps {
             // Get some code from a GitHub repository
-            git 'https://github.com/cuniquek/Retrain_Jenkins.git' 
+            git 'https://github.com/cuniquek/Retrain_Jenkins.git'
+            sh "git checkout development"
             sh "ls"
          }
 
@@ -12,7 +13,6 @@ pipeline {
             // If Maven was able to run the tests, even if some of the test
             // failed, record the test results and archive the jar file.
             success {
-             sh "git checkout development"
              sh "echo 'Jenkins'>./presentation.txt"
              sh 'git config --global user.email "kostas87_tzes@hotmail.com"'
              sh 'git config --global user.name "cuniquek"'
