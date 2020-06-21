@@ -14,11 +14,11 @@ pipeline {
             success {
              sh "git checkout development"
              sh "echo 'Jenkins'>./presentation.txt"
-             sh "git config --global user.email 'kostas87_tzes@hotmail.com'"
-             sh "git config --global user.name 'cuniquek'"
+             sh 'git config --global user.email "kostas87_tzes@hotmail.com"'
+             sh 'git config --global user.name "cuniquek"'
              sh "git add ."
-             sh "git commit -m 'Jenkins was here!!'"
-             sh "git push"
+             sh 'git commit -m "Jenkins was here!!"'
+             sh "git push origin development"
             }
          }
       }
