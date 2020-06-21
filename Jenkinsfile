@@ -17,7 +17,7 @@ pipeline {
              sh "git config --global user.name 'Konstantinos Kapsalis'"
              sh "git add ."
              sh "git commit -m 'Jenkins was here!!'"
-             sh "git push"
+             sh "git --set-upstream origin master"
             }
          }
       }
