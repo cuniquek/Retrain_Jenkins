@@ -7,7 +7,7 @@ pipeline {
             git 'https://github.com/cuniquek/Retrain_Jenkins.git'
 
             
-            sh "vi jenkinsfile"
+            sh "ls"
          }
 
          post {
