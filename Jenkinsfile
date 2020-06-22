@@ -12,7 +12,9 @@ pipeline {
       stage('Testing') {
           steps {
              echo 'Hello World!!'
-             my_branch = params.branch
+             script {
+               my_branch = params.branch
+             }
              echo "Your branch name is ${my_branch}"
           }
           post {
