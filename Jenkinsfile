@@ -5,7 +5,6 @@ pipeline {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/cuniquek/Retrain_Jenkins.git'
-            sh "git checkout development"
             sh "ls"
          }
       }
