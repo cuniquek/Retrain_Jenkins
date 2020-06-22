@@ -11,7 +11,9 @@ pipeline {
       }
       stage('Testing') {
           steps {
-              echo 'Hello World!!'
+             echo 'Hello World!!'
+             my_branch = params.branch
+             echo "Your branch name is ${my_branch}"
           }
           post {
                 success {
