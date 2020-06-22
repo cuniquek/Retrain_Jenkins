@@ -14,7 +14,7 @@ pipeline {
              script {
                my_branch = params.branch
              }
-             echo "Your branch name is ${m_branch}"
+             echo "Your branch name is ${my_branch}"
           }
           post {
                 success {
